@@ -82,6 +82,18 @@ aws eks update-kubeconfig --name <name of cluster>
 
 kubectl cluster-info
 
+***Instruction to EKS Cluster***
+
+1.kubectl commands (imperative) 
+
+2.manifestfile (declarative) - ymls [default -> to track since many using the commands which we dont know] ***best Practice***
+
+
+
+
+
+
+
 
 
 
