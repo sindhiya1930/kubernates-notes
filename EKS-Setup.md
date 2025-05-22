@@ -36,18 +36,20 @@
 6.Security group
 
 
-**K8 Architechture flow**
+***K8 Architechture flow***
 
 ***Creation or scheduling pod***
 
 User ->(Commands)->Apiserver->Schedular->etcd(to get clusterinfo)->Schedular(based on policies we set)->ApiServer->kubelet->container runtime->api Server ->Schedular->etcd(updated the information).
 
-**Automode vs custom**
+
+***Automode vs custom***
 Automode - Serverless (no need to worry about upgrade of K8s with no downtime ,Costlier)
 
 Custom - infra ( We initiate with downtime)
 
-**Nodes add**
+
+***Nodes add***
 1.nodegroup - Adding EC2 (patching we need to do)
 
    AMI type
@@ -61,13 +63,14 @@ Custom - infra ( We initiate with downtime)
 2.Fargate - serverless (its taken care of)
 
 
-**Setup kubectl** 
+***Setup kubectl***
 
 kubernates.io
 
 env variable -> path to exe file(windows)
 
-**local->eks**
+
+***local->eks***
 
 security cred -> access key(cli) (safe)
 
