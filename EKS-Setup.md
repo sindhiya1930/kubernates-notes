@@ -44,27 +44,39 @@ User ->(Commands)->Apiserver->Schedular->etcd(to get clusterinfo)->Schedular(bas
 
 **Automode vs custom**
 Automode - Serverless (no need to worry about upgrade of K8s with no downtime ,Costlier)
+
 Custom - infra ( We initiate with downtime)
 
 **Nodes add**
 1.nodegroup - Adding EC2 (patching we need to do)
 
-AMI type
-capacity OnDemand
-instance type t3.medium(atleast one gb ram and 2 cores)
-scaling - (2-8)
+   AMI type
+
+   capacity OnDemand
+
+   instance type t3.medium(atleast one gb ram and 2 cores)
+   
+   scaling - (2-8)
 
 2.Fargate - serverless (its taken care of)
 
-Setup kubectl -> kubernates.io
+
+**Setup kubectl** 
+
+kubernates.io
+
 env variable -> path to exe file(windows)
 
-local->eks
+**local->eks**
+
 security cred -> access key(cli) (safe)
 
 aws cli install
+
 aws configure -> add access secret json region
+
 aws eks update-kubeconfig --name <name of cluster>
+
 kubectl cluster-info
 
 
