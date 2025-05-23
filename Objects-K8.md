@@ -15,6 +15,7 @@ Recreate :delete v1 , create new v2 (may cause downtime)
 Rolling update : delete one pod from v1, create new pod in v2. similarly for pod 2. Before deleting last pod traffic is routed to v2 and then process is followed (Default Stratergy)
 
 inmem version of manifest file and tag to deployment.
+if replicas not specified -> default 1
 
 4.Service
 
@@ -23,7 +24,7 @@ comm between pods
 clusterIp -> internally cluster comm, 
 nodeport -> traffic from outside of cluster to single desired pod/deployment
 loadbalancer -> traffic from outside of cluster to multiple desired pod/deployment or replicaset
-
+if service type not specified -> default loadbalancer
 
 MANIFEST
 1.apiVersion (api call version of object)
