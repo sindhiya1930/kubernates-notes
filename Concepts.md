@@ -1,11 +1,11 @@
 # Concepts
-**Namespace** \
+**Namespace** 
 
 ***example*** 2 people having same name - differentiate with surname.\
-call internally - by name , cross call - by name and surname \
+call internally - by name , cross call - by name and surname
 
-***3 namespace on creation of cluster***
-kubesystem: System related resources 
+***3 namespace on creation of cluster*** \
+kubesystem: System related resources \
 default : User initiated resources - current context is set to default
 kubepublic: 
 
